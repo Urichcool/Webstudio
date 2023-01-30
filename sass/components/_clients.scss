@@ -1,0 +1,70 @@
+.clients{
+  text-align: center;
+ padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and(min-width:$desktop) {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  }
+}
+
+.clients__title{
+  margin-bottom: 50px;
+ font-family: "Roboto";
+  font-style: normal;
+  color: $title-text-color;
+  font-weight: 700;
+font-size: 28px;
+line-height: 1,17;
+letter-spacing: 0.03em;
+@media screen and(min-width:$desktop) {
+  font-size: 36px;
+line-height: 1.16;
+letter-spacing: 0.03em;
+}
+}
+
+.clients__list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.clients__item {
+ @media screen and (max-width:767px){
+  width: calc((100% - 4 * 15px) /2 );
+  margin: 15px;
+ }
+
+ @media screen and (min-width:$tablet) {
+  width: calc((100% - 6 * 15px) /3);
+  margin: 15px;
+ }
+
+ @media screen and (min-width:$desktop) {
+  width: calc((100% - 12 * 15px) /6);
+  margin: 15px;
+ }
+}
+
+.clients__link{
+height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $icon-color ;
+  border-radius: 4px;
+  color: $icon-color;
+   transition-property: color, border-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+  &:hover,
+  &:focus{
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+.clients__icon{
+  fill:currentColor;
+}
